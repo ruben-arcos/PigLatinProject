@@ -12,9 +12,32 @@ const rl = readline.createInterface({
 
 
 const pigLatin = (word) => {
+  let inputWord = word.trim().toLowerCase();
+  let vowels = ['a', 'e', 'i', 'o', 'u'];
 
-  // Your code here
+  // break your code into pieces and focus on one piece at a time...
+// 1. if word begins with a vowel send to one function: adds "yay"
 
+// 2. if word begins with a consonant send to another function: splices off beginning, returns word with new ending.
+  for (let i = 0; i < word.length; i++)  {
+
+  //words start with a vowel, add yay
+    if ( vowels.includes(inputWord[0])) {
+      let newWord = inputWord + 'yay';
+      return newWord;
+    } else if ( !vowels.includes(inputWord[0]) && !vowels.includes(inputWord[1])) {
+    //word starts with one consonant 
+    //remove the  first letter, put it aat the end, and add ay 
+    //ex. hello
+      let newWord = inputWord.slice(2) + inputWord.slice(0, 2) + 'ay'
+    ////////////                   ello                             h                              ay
+      return newWord;
+    } else {
+      let newWord = inputWord.slice(1) + inputWord.slice(0, 1) + 'ay'
+      return newWord;
+    }
+// 3. if multiple words, create array of words, loop over them, sending them to different functions and creating a new array with the new words.
+  }
 }
 
 // the first function called in the program to get an input from the user
@@ -55,17 +78,3 @@ if (typeof describe === 'function') {
   getPrompt();
 
 }
-
-
-
-
-
-
-// **********
-//   HINTS
-// **********
-
-// break your code into pieces and focus on one piece at a time...
-// 1. if word begins with a vowel send to one function: adds "yay"
-// 2. if word begins with a consonant send to another function: splices off beginning, returns word with new ending.
-// 3. if multiple words, create array of words, loop over them, sending them to different functions and creating a new array with the new words.
