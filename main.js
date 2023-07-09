@@ -10,12 +10,14 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
+document.getElementById("display-element").innerHTML = value;
+
 
 const pigLatin = (word) => {
   let inputWord = word.trim().toLowerCase();
   let vowels = ['a', 'e', 'i', 'o', 'u'];
 
-  // break your code into pieces and focus on one piece at a time...
+
 // 1. if word begins with a vowel send to one function: adds "yay"
 
 // 2. if word begins with a consonant send to another function: splices off beginning, returns word with new ending.
