@@ -14,7 +14,8 @@ body {
 }
 
 section {
-  border: 1px solid violet;
+  /* border: 1px solid violet; */
+  border: 3px solid rgb(212, 213, 205);
   display: flex;
   flex-direction: column;
   border-radius: 10px;
@@ -27,9 +28,11 @@ section {
 h1 {
   font-size: 80px;
   text-align: center;
-  color: azure;
-  margin-bottom: 75px;
+  color: rgb(242, 239, 232);
+  margin-bottom: 5px;
   font-family: 'Cute Font', cursive;
+  /* text-shadow: rgb(212, 213, 205); */
+  text-shadow: -1px 0 rgb(242, 239, 232), 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #user-input {
@@ -37,6 +40,25 @@ h1 {
   width: 250px;
   border-radius: 10px;
   border-style: none;
+  padding: 7px;
+  outline:none;
+  margin-bottom: 90px;
+}
+
+#displayText {
+    text-align: center;
+    color: rgb(117, 118, 112);
+}
+
+input[type="text"], textarea {
+    background: rgb(242, 239, 232); 
+  }
+
+#display-element {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 40px;
 }
 
 #btn {
@@ -45,7 +67,7 @@ h1 {
 
   padding: 0.4em 0.5em;
   background-color: 	#f65656;
-  color: #fff;
+  color: rgb(242, 239, 232);
   --_s: calc(var(--s) * 4) 51% repeat-x;
   --_r: calc(1.345 * var(--s)) at left 50%;
   --_g1: #000 99%, #0000 101%;
