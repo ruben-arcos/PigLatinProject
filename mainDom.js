@@ -42,7 +42,6 @@ const pigLatin = (event) => {
   return displayText.innerHTML = `
     <h3 id='displayText'>${pigLatinArray.join(" ")}</h3>
 
-
   `
   // 1. if word begins with a vowel send to one function: adds "yay"
 
