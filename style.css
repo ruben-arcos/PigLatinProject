@@ -13,6 +13,10 @@ body {
   margin-top: 200px;
 }
 
+.main {
+  background: whitesmoke;
+}
+
 section {
   /* border: 1px solid violet; */
   border: 3px solid rgb(212, 213, 205);
@@ -28,11 +32,12 @@ section {
 h1 {
   font-size: 80px;
   text-align: center;
-  color: rgb(242, 239, 232);
+  /* color: rgb(242, 239, 232); */
+  color: lightblue;
   margin-bottom: 5px;
   font-family: 'Cute Font', cursive;
   /* text-shadow: rgb(212, 213, 205); */
-  text-shadow: -1px 0 rgb(242, 239, 232), 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: -1px 0 rgb(242, 239, 232), 0 1px lightgray, 1px 0 lightpink, 0 -1px lightgray;
 }
 
 #user-input {
@@ -66,7 +71,7 @@ input[type="text"], textarea {
   --s: 0.25em; /* control the wave*/
 
   padding: 0.4em 0.5em;
-  background-color: 	#f65656;
+  background-color: 	rgb(246,86,86);
   color: rgb(242, 239, 232);
   --_s: calc(var(--s) * 4) 51% repeat-x;
   --_r: calc(1.345 * var(--s)) at left 50%;
